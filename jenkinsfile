@@ -23,10 +23,11 @@ echo "Compiling the Project.........."
 sh "mvn compile"
 }
 }
-stage('Deploy') 
+stage('WarFile') 
 {
 steps{
 echo "Deploying the Project.........."
+sh "mvn install"
 }
 }
 }
